@@ -19,13 +19,28 @@ public class Ejercicio03 {
         int[] arreglo = {1, 10, 11, 12, 12, 13, 16, 2, 3, 4, 9, 10, 21};
         double suma = 0;
         double media;
-        
-        for(int i = 0; i < arreglo[i]; i++){
+        int arriba = 0;
+        int abajo = 0;
+
+        for (int i = 0; i < arreglo.length; i++) {
             suma = suma + arreglo[i];
         }
         media = suma / arreglo.length;
-        
-        
+
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] > media) {
+                arriba++;
+            } else {
+                if (arreglo[i] < media) {
+                    abajo++;
+                }
+            }
+        }
+        System.out.printf("Media aritmetica: %.2f\n", media);
+        System.out.printf("Elementos que estan arriba de la media: %d\n", 
+                arriba);
+        System.out.printf("Elementos que estan abajo de la media: %d\n", 
+                abajo);
     }
 
 }
