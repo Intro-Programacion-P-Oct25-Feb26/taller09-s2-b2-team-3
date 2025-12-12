@@ -32,7 +32,7 @@ public class Ejercicio05 {
                 reporte);
 
         for (int i = 0; i < dias.length; i++) {
-            reporte = String.format("%s-%s: $%s\n",
+            reporte = String.format("%s- %s: $%s\n",
                     reporte,
                     dias[i],
                     ventas[i]);
