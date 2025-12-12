@@ -37,8 +37,10 @@ public class Ejercicio03 {
             }
         }
         System.out.printf("Media aritmetica: %.2f\n", media);
-        System.out.printf("Elementos arriba de la media: %d\n", arriba);
-        System.out.printf("Elementos abajo de la media: %d\n", abajo);
+        System.out.printf("Elementos que estan arriba de la media: %d\n", 
+                arriba);
+        System.out.printf("Elementos que estan abajo de la media: %d\n", 
+                abajo);
     }
 
 }
